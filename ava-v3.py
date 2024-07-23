@@ -12,7 +12,7 @@ import os
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 # models
-device = "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 model1 = SentenceTransformer('sentence-transformers/LaBSE')
 model_name_or_id = "MehdiHosseiniMoghadam/AVA-Llama-3-V2"
 try:
