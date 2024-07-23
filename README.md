@@ -1,7 +1,7 @@
-# Magas-AI Telegram Bot
+# Magas-AI Persian Telegram Bot
 
 This repository contains the code for a Telegram bot named "Magas". The bot leverages NLP models for natural language understanding and response generation. It is designed to interact with users, collect their interests, search relevant scientific abstracts, and generate coherent responses based on user input and interests.
-
+## it's for PERSIAN
 ## Features
 
 - **User Interaction**: The bot interacts with users, collects their messages, and stores their interests.
@@ -28,18 +28,18 @@ This repository contains the code for a Telegram bot named "Magas". The bot leve
 2. Create a virtual environment and activate it:
    linux
     ```
-    python -m venv venv
+    python3 -m venv venv
     source venv/bin/activate
     ```
      Windows:
    ```
-    python -m venv venv
+    python3 -m venv venv
     venv\Scripts\activate
    ```
 
 4. Install the required packages:
     ```sh
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 5. replace your `data.csv` in the directory of the project.
@@ -53,14 +53,13 @@ This repository contains the code for a Telegram bot named "Magas". The bot leve
 
 Start the bot with:
 ```
-python AVA-v3.py
+python3 ava-v3.py
 ```
 Usage
 /start: interaction with the bot.
 Private messages: The bot will handle private messages by collecting user info and responding contextually.
 Group messages: The bot will respond to group messages if they contain specific keywords.
 Code Structure
-bot.py: The main script containing the bot logic.
 data.csv: The CSV file containing scientific abstracts.
 user_data.json: A JSON file to store user information and chat history.
 
