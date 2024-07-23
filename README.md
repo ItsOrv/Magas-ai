@@ -53,7 +53,7 @@ This repository contains the code for a Telegram bot named "Magas". The bot leve
 
 Start the bot with:
 ```
-python bot.py
+python AVA-v3.py
 ```
 Usage
 /start: interaction with the bot.
