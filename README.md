@@ -1,4 +1,4 @@
-# Mags Telegram Bot
+# Magas-AI Telegram Bot
 
 This repository contains the code for a Telegram bot named "Magas". The bot leverages NLP models for natural language understanding and response generation. It is designed to interact with users, collect their interests, search relevant scientific abstracts, and generate coherent responses based on user input and interests.
 
@@ -15,47 +15,55 @@ This repository contains the code for a Telegram bot named "Magas". The bot leve
 
 - Python 3.8+
 - Telegram Bot Token
-- GPU (optional but recommended)
+- GPU (A100 recommended)
 
 ### Installation
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/mags-telegram-bot.git
-    cd mags-telegram-bot
+    ```
+    git clone https://github.com/itsorv/magas-ai.git
+    cd magas-ai
     ```
 
 2. Create a virtual environment and activate it:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   linux
     ```
+    python -m venv venv
+    source venv/bin/activate
+    ```
+     Windows:
+   ```
+    python -m venv venv
+    venv\Scripts\activate
+   ```
 
-3. Install the required packages:
+4. Install the required packages:
     ```sh
     pip install -r requirements.txt
     ```
 
-4. Place your `data.csv` in the root directory of the project.
+5. replace your `data.csv` in the directory of the project.
 
-5. Add your Telegram Bot Token to the code:
-    ```python
+6. Add your Telegram Bot Token to the code:
+    ```
     TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
     ```
 
 ### Running the Bot
 
 Start the bot with:
-```sh
+```
 python bot.py
+```
 Usage
-/start: Initializes interaction with the bot.
+/start: interaction with the bot.
 Private messages: The bot will handle private messages by collecting user info and responding contextually.
 Group messages: The bot will respond to group messages if they contain specific keywords.
 Code Structure
 bot.py: The main script containing the bot logic.
 data.csv: The CSV file containing scientific abstracts.
 user_data.json: A JSON file to store user information and chat history.
+
 To Do List
 Improve Error Handling:
 
@@ -87,9 +95,3 @@ Set up continuous integration (CI) for automated testing and deployment.
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-License
-This project is licensed under the MIT License.
-
-Acknowledgements
-Hugging Face for providing the transformers and sentence-transformers libraries.
-Telegram for the Bot API.
