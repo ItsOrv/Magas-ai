@@ -21,8 +21,8 @@ This repository contains the code for a Telegram bot named "Magas". The bot leve
 
 1. Clone the repository:
     ```
-    git clone https://github.com/itsorv/magas-ai.git
-    cd magas-ai
+    git clone https://github.com/itsorv/Magas-ai.git
+    cd Magas-ai
     ```
 
 2. Create a virtual environment and activate it:
